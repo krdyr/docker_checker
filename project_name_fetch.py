@@ -2,6 +2,7 @@ import docker
 
 def get_compose_project_name():
     client = docker.from_env()
+    print("Fetching project name.")
     try:
         # List all containers
         containers = client.containers.list(all=True)
