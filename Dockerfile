@@ -11,4 +11,4 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Run the application
-CMD ["python", "main.py"]
+CMD ["python", "container_names.py"]
