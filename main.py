@@ -1,5 +1,6 @@
 import time
-import get_compose_project_name, restart_inactive_containers
+from project_name_fetch import get_compose_project_name
+from container_checker import restart_inactive_containers
 def main():
   project_name = get_compose_project_name()
   restart_inactive_containers(project_name)
